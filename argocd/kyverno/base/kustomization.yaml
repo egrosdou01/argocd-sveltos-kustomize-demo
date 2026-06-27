@@ -8,6 +8,7 @@ helmCharts:
   releaseName: kyverno
   namespace: kyverno
   valuesFile: values.yaml
-commonLabels:
-  app.kubernetes.io/managed-by: argocd-sveltos
-  app.kubernetes.io/part-of: kyverno
+labels:
+- pairs:
+    app.kubernetes.io/managed-by: argocd-sveltos
+    app.kubernetes.io/part-of: kyverno

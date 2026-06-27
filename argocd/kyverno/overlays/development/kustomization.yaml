@@ -10,6 +10,7 @@ helmCharts:
   releaseName: kyverno
   namespace: kyverno
   valuesFile: values.yaml
-commonLabels:
-  environment: development
-  tier: development
+labels:
+- pairs:
+    environment: development
+    tier: development
