@@ -1,0 +1,11 @@
+# Install Kyverno CRDs. The values below are for development environments.
+crds:
+  install: true
+admissionController:
+  replicas: 1
+backgroundController:
+  replicas: 1
+cleanupController:
+  replicas: 1
+reportsController:
+  replicas: 1
